@@ -1,34 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <title>Your personal website</title>
+    <title>Jack Peelen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/style.css">
-
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -37,9 +22,9 @@
     </div>
   </div>
 
-
   <div class="site-wrap">
 
+    <!-- Mobile Menu -->
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -49,251 +34,262 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
+    <!-- Card Container -->
+    <div class="page-card">
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="#" class="h2 mb-0">Jack Peelen</a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#about-section" class="nav-link">About</a></li>
-                <li><a href="#projects-section" class="nav-link">Projects</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
-        </div>
-      </div>
-
-    </header>
-
-
-
-
-    <div class="site-section cta-big-image border-bottom" id="about-section">
-      <div class="container" style="padding-top: 30px">
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <img src="JackPeelenImage.jpg" alt="Image of you of something fun" class="img-fluid">
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <p>
-              Personal:
-               My name is Jack! I am from Milwaukee, Wisconsin and study computer science at the Universtiy of San Diego<br>
-               Checked out my LinkedIn: https://www.linkedin.com/in/jack-peelen-16138b246
-              </p>
-              <p>
-                Professional:
-                I am currently a full time student. Former work experience includes:<br>
-                Summer 2024: Public Finance Intern @ Stifel Financial<br>
-                Summer 2023: Software Development Intern @ SysLogic Inc.<br>
-               </p>
-               <p>
-                Hobbies:<br>
-                I play soccer and basketball, and am a member of the USD Economics Council
-               </p>
-
-
+      <!-- Navigation -->
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <div class="container-fluid px-4 px-lg-5">
+          <div class="row align-items-center">
+            <div class="col-6 col-xl-2">
+              <h1 class="mb-0 site-logo"><a href="#home-section" class="h2 mb-0">Jack Peelen</a></h1>
             </div>
-
-            
-
-            
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <section class="site-section border-bottom" id="projects-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Projects</h2>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          
-            <img src="BirthdayParadoxProjectImage.jpg" alt="Image of your project" class="img-fluid">
-          
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3>Java Birthday Paradox Tester</h3>
-              <p>
-               Motivation of the project:
-               I wanted to create a project that would test the birthday paradox. 
-               This paradox states that the probabiliy of two people sharing a birthday is over half if there are at least 23 people. 
-               This paradox appears counterintuative because people often assume that because there are 365 possible birthdays many more than 23 people are required to achieve that probability.
-              </p>
-              <p>
-              Functional requirements:
-              This project runs a series of  trials to test this paradox, creating random birthdays and testing similarity among them. In each trial, the number of participants increases, resulting in a different probability of achieving the same birthday.
-              </p>
-              <p>
-              Project design:
-              This project was broken down into a Birthday class, a Trial class, and an Experiment class, and run through a Simulator class in order to efficiently conduct many experiements with multiple trials.
-              </p>
-              <p>
-              Implementation:
-              I engaged with test driven development to implement to Birthday and Simulator classes, as well as their testing classes. This was my first experience with test driven development and I learned how to efficiently write testable code.
-              </p>
-
-          </div>
-        </div>
-      </div>
-
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          
-            <img src="ElevatorProjectPhoto.jpg" alt="Image of your project" class="img-fluid">
-          
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3>Elevator Simulator</h3>
-              <p>
-                Motivation of the project:
-                I wanted to create a project that would simulate different behaviors of elevators.
-                This project aims to demostrate the differing behaviors of different types of elevators and their abilities to move between floors executing calls
-              </p>
-              <p>
-              Functional requirements:
-              This project reads in elevator call requests from a file and uses a scheduler to assign different elevators to different requests
-              <p>
-              Project design:
-              This project was broken down into 4 elevator classes, representing  the 4 kinds of elevators, that extend an abstract class, as well as Call, Scheduler, and Simulator classes to simulate the other required parts of the project
-              </p>
-              <p>
-              Implementation:
-              I engaged with test driven development to implement this project. This was done to ensure clean and efficient code that met the desired guidlines.
-              </p>
+            <div class="col-12 col-md-10 d-none d-xl-block">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li><a href="#home-section" class="nav-link active">Home</a></li>
+                  <li><a href="#about-section" class="nav-link">About</a></li>
+                  <li><a href="#projects-section" class="nav-link">Projects</a></li>
+                  <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
+              <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
             </div>
           </div>
         </div>
+      </header>
 
+      <!-- Hero Section -->
+      <section class="hero-section" id="home-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Social Icons (vertical, far left) -->
+            <div class="col-auto d-none d-lg-flex">
+              <div class="social-icons-vertical">
+                <a href="https://www.linkedin.com/in/jack-peelen-16138b246" target="_blank" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:jackpeelen32@gmail.com" aria-label="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="https://github.com/Jack-Peelen" target="_blank" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://app.joinhandshake.com/profiles/jack-peelen" target="_blank" aria-label="Handshake">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M5.5 2C4.67 2 4 2.67 4 3.5v17C4 21.33 4.67 22 5.5 22h2c.83 0 1.5-.67 1.5-1.5V14h6v6.5c0 .83.67 1.5 1.5 1.5h2c.83 0 1.5-.67 1.5-1.5v-17c0-.83-.67-1.5-1.5-1.5h-2c-.83 0-1.5.67-1.5 1.5V10H9V3.5C9 2.67 8.33 2 7.5 2h-2z"/></svg>
+                </a>
+              </div>
+            </div>
 
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          
-            <img src="NBASIMphoto.png" alt="Image of your project" class="img-fluid">
-          
+            <!-- Hero Text -->
+            <div class="col-lg-5" data-aos="fade-up">
+              <h2 class="hero-title">Hi, I'm Jack</h2>
+              <p class="hero-subtitle">Computer Science Student</p>
+              <p class="hero-description">
+                CS student at the University of San Diego with experience in software development and public finance. Passionate about building clean, functional applications.
+              </p>
+              <a href="#contact-section" class="btn btn-primary smoothscroll">
+                Contact Me
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </a>
+            </div>
+
+            <!-- Hero Image with Blob -->
+            <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <div class="hero-image-wrap">
+                <div class="hero-blob"></div>
+                <img src="JackPeelenImage.jpg" alt="Jack Peelen" class="hero-photo">
+              </div>
+            </div>
           </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3>NBA Simulator</h3>
-              <p>
-               Motivation of the project:
-               We wanted to create a simulation of what it is like to run an NBA franchise, complete with different times in the season and different actions available to the user
-              </p>
-              <p>
-              Functional requirements:
-              This project creates a simulation that puts the user in charge of a team and allows them to perform actions like signing and drafting players.
-              </p>
-              <p>
-              Project design:
-              This project was broken down into multiple classes representing teams, players, a league, and several other classes that contain the actions available.
-              </p>
-              <p>
-              Implementation:
-              I engaged with test driven development with my team members to efficiently develop code and add new features. A key aspect of our design was the ability to add features in the future. We hope to next implement a minigame style option to interact more with the team during the season
-              </p>
 
+          <!-- Scroll Down Indicator -->
+          <div class="scroll-down" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about-section" class="smoothscroll scroll-down-link">
+              <span class="scroll-icon">
+                <span class="scroll-dot"></span>
+              </span>
+              Scroll down &darr;
+            </a>
           </div>
         </div>
-      </div>
+      </section>
 
-        
-      </div>
-      
+      <!-- About Section -->
+      <section class="site-section" id="about-section">
+        <div class="container">
+          <div class="row mb-4 justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
 
-    </section>
+              <div class="about-card mb-4">
+                <h3>Professional Experience</h3>
+                <ul class="experience-list">
+                  <li><strong>Summer 2025:</strong> Software Development Intern @ Syslogic Inc.</li>
+                  <li><strong>Summer 2024:</strong> Public Finance Intern @ Stifel Financial</li>
+                  <li><strong>Summer 2023:</strong> Software Development Intern @ Syslogic Inc.</li>
+                </ul>
+              </div>
 
+              <div class="about-card mb-4">
+                <h3>CS Skills</h3>
+                <p><strong>Languages &amp; Frameworks:</strong> React Native, Flutter, Java, Python, C, JavaScript, Dart, SQL, CSS, HTML</p>
+                <p><strong>Cloud Infrastructure:</strong> AWS (S3, RDS, Polly, Transcribe, Rekognition), Firebase, Supabase, Google Cloud, Azure DevOps</p>
+                <p><strong>Methods:</strong> Agile, Scrum, TDD, HCI</p>
+              </div>
 
-    <section class="site-section" id="contact-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Contact Me</h2>
+              <div class="about-card mb-4">
+                <h3>Personal</h3>
+                <p>CS Student @ University of San Diego, graduating in May 2026</p>
+                <p>From Milwaukee, Wisconsin, currently based in San Diego</p>
+                <p>Hobbies include app development, USD Economics Council, and basketball</p>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="row mb-5 text-center">
+      </section>
 
-
-
-          
-          
-          <div class="col-md-12 text-center">
-            <p class="mb-0">
-              <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <span>jackpeelen32@gmail.com</span>
-            </p>
+      <!-- Projects Section -->
+      <section class="site-section" id="projects-section">
+        <div class="container">
+          <div class="row mb-4 justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            </div>
           </div>
-          
-          <div class="col-md-12 text-center">
-            <p class="mb-0">
-              <span class="icon-graduation-cap d-block h4 text-primary"></span>
-              <a href="">https://docs.google.com/document/d/1GkXjub92epy7Av-MeKiWNs2iTQb0MU-q6Xw3h6j0tPY/edit?usp=drive_link</a>
-            </p>
+
+          <!-- Huddle-Up -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-center">
+              <h3 class="project-title"><a href="https://huddle-up.app" target="_blank">Huddle-Up</a></h3>
+              <p>
+                Designed and built a full-stack web platform to improve coordination for youth sports teams. Engineered core features such as an attendance tracking dashboard with analytics, role-based task management, event scheduling calendar, and integrated team messaging functionality.
+              </p>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-lg-8">
+                <div class="project-carousel owl-carousel">
+                  <div class="item"><img src="huddle-up-photos/huddle-up1.png" alt="Huddle-Up screenshot 1" class="img-fluid project-img"></div>
+                  <div class="item"><img src="huddle-up-photos/huddle-up2.png" alt="Huddle-Up screenshot 2" class="img-fluid project-img"></div>
+                  <div class="item"><img src="huddle-up-photos/huddle-up3.png" alt="Huddle-Up screenshot 3" class="img-fluid project-img"></div>
+                  <div class="item"><img src="huddle-up-photos/huddle-up4.png" alt="Huddle-Up screenshot 4" class="img-fluid project-img"></div>
+                  <div class="item"><img src="huddle-up-photos/huddle-up5.png" alt="Huddle-Up screenshot 5" class="img-fluid project-img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pin It -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center">
+              <h3 class="project-title">Pin It</h3>
+              <p>
+                Pin It is an Android and iOS app designed to make it easier to create and share photo content with your friends. Users can create posts of various formats and then collaboratively make bulletin boards using those posts.
+              </p>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-lg-4">
+                <div class="project-carousel owl-carousel">
+                  <div class="item"><img src="PinItPhotos/1000012220.jpg" alt="Pin It screenshot 1" class="img-fluid project-img"></div>
+                  <div class="item"><img src="PinItPhotos/1000012224.jpg" alt="Pin It screenshot 2" class="img-fluid project-img"></div>
+                  <div class="item"><img src="PinItPhotos/1000012226.jpg" alt="Pin It screenshot 3" class="img-fluid project-img"></div>
+                  <div class="item"><img src="PinItPhotos/1000012228.jpg" alt="Pin It screenshot 4" class="img-fluid project-img"></div>
+                  <div class="item"><img src="PinItPhotos/1000012230.jpg" alt="Pin It screenshot 5" class="img-fluid project-img"></div>
+                  <div class="item"><img src="PinItPhotos/1000012232.jpg" alt="Pin It screenshot 6" class="img-fluid project-img"></div>
+                  <div class="item"><img src="PinItPhotos/1000012234.jpg" alt="Pin It screenshot 7" class="img-fluid project-img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="site-section" id="contact-section">
+        <div class="container">
+          <div class="row mb-4 justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-5 text-center mb-4">
+              <div class="contact-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <h4>Email</h4>
+                <a href="mailto:jackpeelen32@gmail.com">jackpeelen32@gmail.com</a>
+              </div>
+            </div>
+            <div class="col-md-5 text-center mb-4">
+              <div class="contact-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <h4>Resume</h4>
+                <a href="https://docs.google.com/document/d/1_oMDTWHy2-gWJAM3EJ_S9gCb8qx0jRWW8dhdewFZUuw/edit?tab=t.0" target="_blank">View My Resume</a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Social Links -->
+          <div class="row justify-content-center d-lg-none" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-auto text-center">
+              <div class="social-icons-horizontal">
+                <a href="https://www.linkedin.com/in/jack-peelen-16138b246" target="_blank" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="https://github.com/Jack-Peelen" target="_blank" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://app.joinhandshake.com/profiles/jack-peelen" target="_blank" aria-label="Handshake">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M5.5 2C4.67 2 4 2.67 4 3.5v17C4 21.33 4.67 22 5.5 22h2c.83 0 1.5-.67 1.5-1.5V14h6v6.5c0 .83.67 1.5 1.5 1.5h2c.83 0 1.5-.67 1.5-1.5v-17c0-.83-.67-1.5-1.5-1.5h-2c-.83 0-1.5.67-1.5 1.5V10H9V3.5C9 2.67 8.33 2 7.5 2h-2z"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container text-center">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website builds on a template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+        </div>
+      </footer>
 
-
-    <footer class="site-footer">
-      <div class="container">
-
-          <div class="col-md-12 text-center">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website builds on a template by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-
-          </div>
-
-
-      </div>
-    </footer>
-
-  </div> <!-- .site-wrap -->
+    </div><!-- .page-card -->
+  </div><!-- .site-wrap -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/collapsable.js"></script>
-
-
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.project-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        smartSpeed: 600
+      });
+    });
+  </script>
 
   </body>
 </html>
