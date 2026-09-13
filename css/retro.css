@@ -192,14 +192,6 @@ a { color: var(--cyan); }
   line-height: 1.45;
 }
 
-.dialog__cursor {
-  display: block;
-  margin-top: 10px;
-  font-family: var(--px);
-  font-size: 9px;
-  color: var(--yellow);
-}
-
 .btn-row {
   display: flex;
   gap: 14px;
@@ -522,14 +514,6 @@ a { color: var(--cyan); }
   font-size: 9px;
   color: var(--muted);
   animation: blink 1.4s steps(1) infinite;
-}
-
-.hint {
-  margin: 16px 0 0;
-  font-family: var(--px);
-  font-size: 7px;
-  line-height: 2;
-  color: var(--yellow);
 }
 
 .level {
