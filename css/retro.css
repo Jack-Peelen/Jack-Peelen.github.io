@@ -418,15 +418,7 @@ a { color: var(--cyan); }
 
 .quest__when { color: var(--text); }
 
-.quest--done {
-  border-color: var(--dim-border);
-  background: var(--panel-dim);
-  opacity: .72;
-}
-.quest--done .quest__icon,
-.quest--done .quest__title { color: var(--muted); }
-.quest--done .quest__body { color: var(--text-dim); }
-.quest--done .quest__when { color: var(--muted); }
+.quest--done .quest__icon { color: var(--green); }
 
 /* --- project select ------------------------------------------------------- */
 
