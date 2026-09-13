@@ -498,6 +498,19 @@ a { color: var(--cyan); }
   background: linear-gradient(180deg, rgba(11, 11, 22, 0) 35%, rgba(11, 11, 22, .94) 100%);
 }
 
+/* Light tile for a dark logo: cream backdrop, logo centred, dark strip only behind the label */
+.tile--logo {
+  background-color: #fff;
+  background-size: 82% auto;
+  background-position: center 42%;
+  background-repeat: no-repeat;
+}
+
+.tile--logo::after,
+.tile--logo.is-open::after {
+  background: linear-gradient(180deg, rgba(11, 11, 22, 0) 68%, rgba(11, 11, 22, .96) 100%);
+}
+
 .tile--locked {
   align-items: center;
   justify-content: center;
