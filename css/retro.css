@@ -579,20 +579,27 @@ a { color: var(--cyan); }
 }
 
 .carousel--portrait {
+  --slide-ratio: 1080 / 2316;
   max-width: 340px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.carousel__slide { display: none; }
+.carousel--wide { --slide-ratio: 1561 / 726; }
+
+/* Fixed-ratio frame so the box keeps its size before (lazy) images load and between slides */
+.carousel__slide {
+  display: none;
+  aspect-ratio: var(--slide-ratio, 2 / 1);
+  max-height: 560px;
+}
 .carousel__slide.is-active { display: block; }
 
 .carousel__slide img {
+  display: block;
   width: 100%;
-  height: auto;
-  max-height: 560px;
+  height: 100%;
   object-fit: contain;
-  margin: 0 auto;
 }
 
 .carousel__controls {
