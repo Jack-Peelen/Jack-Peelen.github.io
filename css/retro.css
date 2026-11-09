@@ -466,6 +466,7 @@ a { color: var(--cyan); }
 
 .tile--green .tile__name { color: var(--green); }
 .tile--cyan  .tile__name { color: var(--cyan); }
+.tile--yellow .tile__name { color: var(--yellow); }
 
 .tile:hover { transform: translateY(-3px); }
 
@@ -501,6 +502,13 @@ a { color: var(--cyan); }
 .tile--logo::after,
 .tile--logo.is-open::after {
   background: linear-gradient(180deg, rgba(11, 11, 22, 0) 68%, rgba(11, 11, 22, .96) 100%);
+}
+
+/* Pixel-art cover: match its cream backdrop and keep the pixels crisp */
+.tile--pixel {
+  background-color: #f6ecdd;
+  background-size: 70% auto;
+  image-rendering: pixelated;
 }
 
 .tile--locked {
